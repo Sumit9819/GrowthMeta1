@@ -5,15 +5,15 @@
   --bg-primary: #000000;
   --bg-secondary: #0a0a0a;
   --bg-tertiary: #111111;
-  
+
   --text-primary: #ffffff;
   --text-secondary: #e5e5e5;
   --text-muted: #888888;
-  
+
   --accent-primary: #00d9ff;
   --accent-glow: #00d9ff;
   --success: #10b981;
-  
+
   --border-subtle: #1a1a1a;
   --glass-border: rgba(255, 255, 255, 0.1);
 }
@@ -40,6 +40,19 @@ body {
   color: var(--text-primary);
   font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   overflow-x: hidden;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+}
+
+/* Improved section spacing */
+section {
+  padding: 8rem 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 10rem 0;
+  }
 }
 
 /* Glass effect */
@@ -65,4 +78,34 @@ body {
 /* Smooth transitions */
 .transition-smooth {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Better container spacing */
+.container-spacing {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-spacing {
+    padding: 0 2rem;
+  }
+}
+
+/* Improved typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.8;
+  letter-spacing: -0.01em;
 }

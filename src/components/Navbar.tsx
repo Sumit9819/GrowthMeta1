@@ -17,11 +17,11 @@ export default function Navbar() {
     }, [])
 
     const navLinks = [
-        { name: 'Services', href: '#expertise' },
-        { name: 'Process', href: '#process' },
-        { name: 'Results', href: '#results' },
-        { name: 'About', href: '#about' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Services', href: '/services' },
+        { name: 'Process', href: '/process' },
+        { name: 'Results', href: '/results' },
+        { name: 'About', href: '/about' },
+        { name: 'Contact', href: '/contact' },
     ]
 
     return (
@@ -48,7 +48,7 @@ export default function Navbar() {
                             </Link>
                         ))}
                         <Link
-                            href="#contact"
+                            href="/contact"
                             className="px-6 py-2.5 bg-cyan-500/10 text-cyan-400 rounded-lg border border-cyan-500/20 hover:bg-cyan-500/20 transition-all hover:glow"
                         >
                             Get Started
@@ -80,7 +80,7 @@ export default function Navbar() {
                             </Link>
                         ))}
                         <Link
-                            href="#contact"
+                            href="/contact"
                             onClick={() => setIsMobileMenuOpen(false)}
                             className="block w-full px-6 py-2.5 bg-cyan-500/10 text-cyan-400 text-center rounded-lg border border-cyan-500/20 hover:bg-cyan-500/20 transition-all"
                         >

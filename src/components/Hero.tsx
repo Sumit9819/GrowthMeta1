@@ -25,29 +25,29 @@ export default function Hero({
             {/* Background gradient */}
             <div className="absolute inset-0 bg-gradient-to-b from-cyan-500/5 via-transparent to-transparent" />
 
-            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-32 md:py-40">
+                <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                     {/* Left content */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="space-y-8"
+                        className="space-y-10"
                     >
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/10 rounded-full border border-cyan-500/20">
+                        <div className="inline-flex items-center gap-2 px-4 py-2.5 bg-cyan-500/10 rounded-full border border-cyan-500/20">
                             <Sparkles size={16} className="text-cyan-400" />
-                            <span className="text-sm text-cyan-400">DATA INTELLIGENCE AGENCY</span>
+                            <span className="text-sm text-cyan-400 font-medium tracking-wide">DATA INTELLIGENCE AGENCY</span>
                         </div>
 
-                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
                             <span className="gradient-text">{title}</span>
                         </h1>
 
-                        <p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-xl">
+                        <p className="text-xl md:text-2xl text-gray-400 leading-relaxed max-w-xl">
                             {subtitle}
                         </p>
 
-                        <div className="flex flex-col sm:flex-row gap-4">
+                        <div className="flex flex-col sm:flex-row gap-4 pt-4">
                             <a
                                 href={ctaLink}
                                 className="group px-8 py-4 bg-cyan-500 text-black rounded-lg font-semibold hover:bg-cyan-400 transition-all flex items-center justify-center gap-2 hover:gap-3 glow"
@@ -73,14 +73,14 @@ export default function Hero({
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="flex items-center justify-center"
                     >
-                        <div className="relative w-80 h-80">
+                        <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                             {/* Outer glow circle */}
                             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-500/20 to-transparent blur-3xl" />
 
                             {/* Main circle */}
                             <div className="relative w-full h-full rounded-full glass border-2 border-cyan-500/20 flex flex-col items-center justify-center">
-                                <div className="text-7xl font-bold gradient-text">99%</div>
-                                <div className="text-gray-400 mt-2">Retention Rate</div>
+                                <div className="text-7xl lg:text-8xl font-bold gradient-text mb-2">99%</div>
+                                <div className="text-gray-400 text-lg">Retention Rate</div>
                             </div>
 
                             {/* Decorative rings */}

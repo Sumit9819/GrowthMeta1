@@ -4,9 +4,23 @@ export default function Footer() {
     const currentYear = new Date().getFullYear()
 
     const footerLinks = {
-        Services: ['SEO & Content', 'Paid Media (PPC)', 'Data Analytics', 'Conversion (CRO)'],
-        Company: ['About Us', 'Careers', 'Blog', 'Contact'],
-        Legal: ['Privacy Policy', 'Terms of Service', 'Cookie Policy'],
+        Services: [
+            { name: 'SEO & Content', href: '/services' },
+            { name: 'Paid Media (PPC)', href: '/services' },
+            { name: 'Data Analytics', href: '/services' },
+            { name: 'Conversion (CRO)', href: '/services' },
+        ],
+        Company: [
+            { name: 'About Us', href: '/about' },
+            { name: 'Process', href: '/process' },
+            { name: 'Results', href: '/results' },
+            { name: 'Contact', href: '/contact' },
+        ],
+        Legal: [
+            { name: 'Privacy Policy', href: '#' },
+            { name: 'Terms of Service', href: '#' },
+            { name: 'Cookie Policy', href: '#' },
+        ],
     }
 
     return (
@@ -27,12 +41,12 @@ export default function Footer() {
                             <h4 className="text-sm font-semibold mb-4">{category}</h4>
                             <ul className="space-y-2">
                                 {links.map((link) => (
-                                    <li key={link}>
+                                    <li key={link.name}>
                                         <Link
-                                            href="#"
+                                            href={link.href}
                                             className="text-gray-400 text-sm hover:text-white transition-colors"
                                         >
-                                            {link}
+                                            {link.name}
                                         </Link>
                                     </li>
                                 ))}
